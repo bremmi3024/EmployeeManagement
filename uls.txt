@@ -1,0 +1,18 @@
+http://localhost:8081/employees/4/with-department
+http://localhost:8081/employees
+
+
+git clone https://github.com/bremmi3024/EmployeeManagement.git
+cd your-repository
+
+Eureka
+
+http://localhost:8765/DEPARTMENT-SERVICE/departments
+http://localhost:8765/EMPLOYEE-SERVICE/employees/4/with-department
+
+so here if eureka talk to our services in lowecase of it then we need to enable in application.properties file like below
+
+spring.cloud.gateway.discovery.locator.lower-case-service-id=true
+
+http://localhost:8765/deparment-service/departments
+http://localhost:8765/employee-service/employees/4/with-department
